@@ -12,6 +12,7 @@ body {
     background: #060608;
     color: #FAFAFA;
     overflow: hidden;
+    height: 100vh;
 }
 
 
@@ -136,7 +137,7 @@ h1 {
     --clip-top: calc(var(--stack-height) * var(--index));
     --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
     clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
-    animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+    animation: stack 450ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
 }
   
 .stack span:nth-child(odd) { --glitch-translate: 8px; }
@@ -173,9 +174,55 @@ h1 {
     4%, 100% {  text-shadow: none; transform: none; }
 }
 
-
-
-
 /* CARD  TERMINAL*/
 
+
+
+
+/* FOOTER MENU  */
+footer{
+  font-size: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(57, 57, 57);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+footer a{
+  color: white;
+}
+
+.fa-pen{
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 60%;
+  background-color: #676782;
+  display: none;
+}
+
+.img-profile{
+  position: relative;
+  width: auto;
+}
+
+.img-profile:hover .fa-pen{
+  display: inline;
+}
+.img-profile img{
+  border-radius: 20px;
+}
+
+.fa-pen{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* /FOOTER MENU  */
 
