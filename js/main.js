@@ -1,12 +1,19 @@
 'use strict';
 
-const name = prompt("Inserisci il tuo nome:");
+const nome = prompt("Inserisci il tuo nome:");
 const surname = prompt("Inserisci il tuo cognome:");
 const color = prompt("Inserisci il tuo colore preferito:");
 const number = prompt("inserisci le ultime 2 cifre del tuo anno di nascita:");
 
-const pw = `${surname}${color}${number}!`;
+const string_nome = `${nome} stiamo creando la tua password!`;
+const pw = `-> ${surname}${color}${number}!`;
 
-
+document .querySelector(".nome") .innerHTML =string_nome;
 document .querySelector("#password") .innerHTML = pw;
-console.log(pw);
+
+
+console.log("Il nome utente è: "+ nome)
+console.log("Il cognome utente è: "+ surname)
+console.log("Il colore scelto dall'utente è: "+ color)
+console.log("L'anno di nascita dell'utente è: "+ number)
+console.log("La Password è:" + pw);
