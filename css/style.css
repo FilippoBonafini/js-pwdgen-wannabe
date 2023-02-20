@@ -1,0 +1,87 @@
+:root {
+    --bg-color: rgb(57, 57, 57);
+    --typewriterSpeed: 6s;
+    --typewriterCharacters: 24;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Source Code Pro", monospace;
+    background: black;
+    color: white;
+  }
+  
+  h1 {
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+  }
+  
+  .typing::before,
+  .typing::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .typing::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
+  }
+  
+  .typing::after {
+    width: 0.125em;
+    background: rgb(255, 255, 255);
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) infinite;
+  }
+  
+  
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
+  .-ms-background-card-terminal{
+    background-color: rgb(57, 57, 57);
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    width: 50vw;
+    margin: auto;
+    margin-top: 90px;
+}
+.-ms-circle-red{
+    font-size: 20px;
+    color: #ff5f5c;
+}
+
+.-ms-circle-yellow{
+    font-size: 20px;
+    color: #ffbb4e;
+}
+
+.-ms-circle-green{
+    font-size: 20px;
+    color: #00c958;
+}
