@@ -90,6 +90,11 @@ h1 {
     cursor: pointer;
 }
 
+.card-body:active span{
+    transition-duration: 0.1s;
+    font-size: 18px;
+}
+
 .-ms-background-card-terminal{
     background-color: rgb(57, 57, 57);
     color: white;
@@ -167,6 +172,8 @@ h1 {
     }
     4%, 100% {  text-shadow: none; transform: none; }
 }
+
+
 
 
 /* CARD  TERMINAL*/
