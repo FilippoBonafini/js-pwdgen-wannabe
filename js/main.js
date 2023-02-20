@@ -5,7 +5,7 @@ const surname = prompt("Inserisci il tuo cognome:");
 const color = prompt("Inserisci il tuo colore preferito:");
 const number = prompt("inserisci le ultime 2 cifre del tuo anno di nascita:");
 
-const string_nome = `${nome} stiamo creando la tua password!`;
+const string_nome = `${nome} ecco la tua password:`;
 const pw = `-> ${surname}${color}${number}!`;
 
 document .querySelector(".nome") .innerHTML =string_nome;
